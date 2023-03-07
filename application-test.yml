@@ -1,0 +1,24 @@
+
+---
+  app :
+     name: My App
+     description: Welcome to ${app.name} from config server profile test
+  my :
+    list :
+        values: One, Tow, Three
+    greeting: Hello from Mohamad
+
+  db :
+    connection: "connection string here from config server"
+    host: 127.0.0.1
+    port: 1234
+
+  management:
+    endpoints:
+      web:
+       exposure:
+        include: "*"
+
+  spring:
+   profiles:
+     active: test
